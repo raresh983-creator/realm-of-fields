@@ -66,7 +66,7 @@ function AplicatiiPage() {
               </div>
               <div className="w-px h-24 bg-border hidden md:block" />
               <div className="w-full md:w-48 shrink-0 text-sm text-particle-dim">
-                Unde μ₀ este permeabilitatea vidului, I curentul, r distanța.
+                Unde μ₀ este permeabilitatea vidului, I curentul, r distanța, iar 𝑒⃗ este vectorul unitar tangent la liniile circulare ale câmpului magnetic.
               </div>
             </div>
           </div>
