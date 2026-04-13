@@ -62,7 +62,7 @@ function CirculatiaPage() {
       </section>
 
       {/* Two columns: Circulația & Fluxul */}
-      <section className="px-8 md:px-16 lg:px-24 py-32 grid md:grid-cols-2 gap-16">
+      <section className="px-8 md:px-16 lg:px-24 py-32 grid md:grid-cols-3 gap-12">
         {/* Circulația */}
         <div className="flex flex-col gap-8">
           <h2 className="font-display text-4xl italic">
