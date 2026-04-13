@@ -63,7 +63,9 @@ function DivergentaPage() {
                 <span className="font-mono text-sm text-pole-south">
                   div v {">"} 0
                 </span>
-                ), avem un fenomen de emisie — un izvor. Dacă este negativă (
+                ), avem un fenomen de emisie — un izvor.
+                <br />
+                Dacă este negativă (
                 <span className="font-mono text-sm text-pole-south">
                   div v {"<"} 0
                 </span>
