@@ -50,7 +50,7 @@ function DivergentaPage() {
 
           <EquationBox
             label="Divergența"
-            equation="div V = ∇ · V = ∂Vx/∂x + ∂Vy/∂y + ∂Vz/∂z"
+            equation="div V = ∇ · V = P'x+Q'y+R'z"
           />
 
           <div className="mt-8 space-y-6 text-particle-dim leading-relaxed">
