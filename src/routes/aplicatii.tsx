@@ -7,6 +7,7 @@ import {
 import conductorImg from "../assets/conductor-field.jpg";
 import equationBField from "../assets/equation-b-field.png";
 import campulRadialFull from "../assets/campul-radial-full.png";
+import campulCircularFull from "../assets/campul-circular-full.png";
 import { ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/aplicatii")({
@@ -146,24 +147,7 @@ function AplicatiiPage() {
 
           {/* Exemplu 2: Câmpul circular */}
           <div className="flex flex-col gap-6">
-            <h3 className="font-display text-2xl italic">
-              Câmpul circular: v⃗ = −yî + xĵ
-            </h3>
-
-            <div className="bg-fluid border border-border rounded-sm p-6 space-y-3">
-              <div className="font-mono text-xs text-pole-south tracking-widest uppercase mb-4">
-                Ecuațiile liniilor de câmp
-              </div>
-              <div className="font-mono text-particle text-center text-lg py-2">
-                dx/(−y) = dy/x
-              </div>
-              <div className="font-mono text-particle-dim text-center">
-                x dx + y dy = 0
-              </div>
-              <div className="font-mono text-pole-south text-center text-lg py-2 border-t border-border mt-4 pt-4">
-                x² + y² = C
-              </div>
-            </div>
+            <img src={campulCircularFull} alt="Câmpul circular — ecuațiile liniilor de câmp" className="w-full rounded-sm border border-border" />
 
             <PhysicsNote>
               Liniile de câmp sunt{" "}
