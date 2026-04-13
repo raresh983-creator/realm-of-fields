@@ -1,0 +1,120 @@
+import { createFileRoute } from "@tanstack/react-router";
+import {
+  SectionLayout,
+  EquationBox,
+  PhysicsNote,
+} from "../components/SectionLayout";
+import rotorImg from "../assets/rotor-field.jpg";
+
+export const Route = createFileRoute("/circulatia")({
+  head: () => ({
+    meta: [
+      { title: "Circulația & Fluxul — ETC" },
+      {
+        name: "description",
+        content:
+          "Teorema lui Stokes, teorema Gauss-Ostrogradski și interpretarea lor fizică.",
+      },
+      { property: "og:title", content: "Circulația & Fluxul — ETC" },
+      {
+        property: "og:description",
+        content:
+          "Ecuațiile lui Maxwell se bazează pe circulație și flux — descoperă cum le măsurăm.",
+      },
+    ],
+  }),
+  component: CirculatiaPage,
+});
+
+function CirculatiaPage() {
+  return (
+    <SectionLayout>
+      {/* Cinematic rotor hero */}
+      <section className="px-8 md:px-16 lg:px-24 py-40 flex flex-col items-center text-center">
+        <div className="font-mono text-iron mb-8 text-sm tracking-[0.2em] uppercase">
+          Secțiunea 04
+        </div>
+        <h1 className="font-display text-5xl md:text-8xl italic mb-12 text-balance max-w-5xl leading-[0.9]">
+          Circulația & Fluxul
+        </h1>
+        <p className="text-particle-dim text-xl font-light leading-relaxed max-w-[60ch] mb-20">
+          Ecuațiile lui Maxwell se bazează pe două noțiuni fundamentale de
+          calcul integral pe care le folosim pentru a „măsura" câmpul la scară
+          macro.
+        </p>
+
+        <div className="w-full max-w-6xl aspect-[21/9] bg-fluid relative overflow-hidden rounded-sm group">
+          <img
+            src={rotorImg}
+            alt="Vizualizare rotor — vârtej"
+            loading="lazy"
+            width={1920}
+            height={800}
+            className="w-full h-full object-cover mix-blend-luminosity opacity-30 transition-transform duration-1000 scale-100 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 border border-border pointer-events-none" />
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div className="font-mono text-4xl md:text-7xl font-thin text-particle/30 tracking-widest">
+              ∮ F · dl
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Two columns: Circulația & Fluxul */}
+      <section className="px-8 md:px-16 lg:px-24 py-32 grid md:grid-cols-2 gap-16">
+        {/* Circulația */}
+        <div className="flex flex-col gap-8">
+          <h2 className="font-display text-4xl italic">
+            Circulația (Stokes)
+          </h2>
+
+          <EquationBox
+            label="Formula lui Stokes"
+            equation="∮ F · dl = ∬ (rot F) · dS"
+          />
+
+          <p className="text-particle-dim leading-relaxed">
+            Circulația reprezintă integrala de linie a vectorului de-a lungul
+            unei curbe închise.
+          </p>
+
+          <PhysicsNote>
+            Dacă vectorul studiat reprezintă o forță (F), atunci circulația
+            pe o traiectorie închisă reprezintă exact{" "}
+            <span className="text-particle font-medium">
+              lucrul mecanic
+            </span>{" "}
+            efectuat de acele forțe. Prin formula lui Stokes, circulația pe
+            contur este egală cu fluxul rotorului prin suprafața delimitată.
+          </PhysicsNote>
+        </div>
+
+        {/* Fluxul */}
+        <div className="flex flex-col gap-8">
+          <h2 className="font-display text-4xl italic">
+            Fluxul (Gauss-Ostrogradski)
+          </h2>
+
+          <EquationBox
+            label="Formula Gauss-Ostrogradski"
+            equation="∯ F · dS = ∭ (div F) dV"
+          />
+
+          <p className="text-particle-dim leading-relaxed">
+            Fluxul reprezintă o integrală de suprafață care ne spune
+            cantitatea exactă de „câmp" care străbate acea suprafață.
+          </p>
+
+          <PhysicsNote>
+            Dacă ne imaginăm câmpul ca pe curgerea unui fluid, fluxul ne
+            spune cantitatea exactă de fluid care străbate suprafața în
+            unitatea de timp. Formula Gauss-Ostrogradski permite calculul
+            fluxului adunând toate divergențele (izvoarele) din interiorul
+            volumului închis.
+          </PhysicsNote>
+        </div>
+      </section>
+    </SectionLayout>
+  );
+}
