@@ -6,6 +6,7 @@ import {
 } from "../components/SectionLayout";
 import conductorImg from "../assets/conductor-field.jpg";
 import equationBField from "../assets/equation-b-field.png";
+import campulRadialImg from "../assets/campul-radial-title.png";
 import { ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/aplicatii")({
