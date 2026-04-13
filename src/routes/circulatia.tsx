@@ -114,6 +114,31 @@ function CirculatiaPage() {
             volumului închis.
           </PhysicsNote>
         </div>
+
+        {/* Integrala de suprafață a scalarului */}
+        <div className="flex flex-col gap-8">
+          <h2 className="font-display text-4xl italic">
+            Fluxul Scalar (Gradient)
+          </h2>
+
+          <EquationBox
+            label="Formula integrală"
+            equation="∬ n⃗·f dS = ∭ ∇f dV"
+          />
+
+          <p className="text-particle-dim leading-relaxed">
+            Integrala dublă orientată a unui câmp scalar pe o suprafață
+            închisă este egală cu integrala triplă a gradientului în
+            volumul delimitat.
+          </p>
+
+          <PhysicsNote>
+            Această relație leagă valorile unui câmp scalar pe frontieră
+            de variația sa spațială în interior, oferind o metodă de
+            calcul analogă teoremei Gauss-Ostrogradski, dar aplicată
+            funcțiilor scalare.
+          </PhysicsNote>
+        </div>
       </section>
     </SectionLayout>
   );
