@@ -8,6 +8,7 @@ const navItems = [
   { to: "/gradient", label: "Gradient" },
   { to: "/divergenta", label: "Divergența" },
   { to: "/circulatia", label: "Circulația" },
+  { to: "/aplicatii", label: "Aplicații" },
 ] as const;
 
 export function Header() {
