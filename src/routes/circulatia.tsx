@@ -38,7 +38,7 @@ function CirculatiaPage() {
           Circulația & Fluxul
         </h1>
         <p className="text-particle-dim text-xl font-light leading-relaxed max-w-[60ch] mb-20">
-          Ecuațiile lui Maxwell se bazează pe două noțiuni fundamentale de
+          Ecuațiile lui Maxwell se bazează pe trei noțiuni fundamentale de
           calcul integral pe care le folosim pentru a „măsura" câmpul la scară
           macro.
         </p>
