@@ -81,10 +81,12 @@ function Index() {
             <span className="block size-1.5 rounded-full bg-pole-south shadow-[0_0_12px_oklch(0.75_0.14_200)]" />
             Elemente de Teoria Câmpurilor
           </div>
-          <h1 className="font-display text-6xl md:text-[8rem] leading-[0.85] tracking-tighter text-balance max-w-[15ch]">
-            Topologia{" "}
+          <h1 className="font-display text-5xl md:text-[6rem] leading-[0.85] tracking-tighter text-balance max-w-[20ch]">
+            Câmpul{" "}
             <br />
-            <span className="italic text-iron">Invizibilului</span>
+            <span className="italic text-iron">electromagnetic</span>
+            <br />
+            <span className="text-particle-dim text-4xl md:text-[4rem]">și aplicațiile sale în ingineria electrică</span>
           </h1>
           <p className="mt-12 max-w-[55ch] text-particle-dim text-lg md:text-xl font-light leading-relaxed">
             O imersiune în structura matematică a universului. Observați cum
