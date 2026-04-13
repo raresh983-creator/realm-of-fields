@@ -51,6 +51,12 @@ const sections = [
     desc: "Teoremele lui Stokes și Gauss-Ostrogradski.",
     to: "/circulatia",
   },
+  {
+    num: "05",
+    title: "Aplicații Inginerești",
+    desc: "Câmpul magnetic al unui conductor, exemple ETC și aplicații reale.",
+    to: "/aplicatii",
+  },
 ];
 
 function Index() {
