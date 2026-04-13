@@ -37,6 +37,10 @@ export const Route = createRootRoute({
       { name: "author", content: "ETC" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { property: "og:title", content: "Teoria Câmpurilor Electromagnetice — ETC" },
+      { name: "twitter:title", content: "Teoria Câmpurilor Electromagnetice — ETC" },
+      { property: "og:description", content: "Explorați universul câmpurilor electromagnetice: de la matematică la electromagnetism." },
+      { name: "twitter:description", content: "Explorați universul câmpurilor electromagnetice: de la matematică la electromagnetism." },
     ],
     links: [
       {
