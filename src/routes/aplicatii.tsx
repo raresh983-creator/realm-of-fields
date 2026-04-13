@@ -55,11 +55,21 @@ function AplicatiiPage() {
             <span className="text-particle">regulii mâinii drepte</span>.
           </p>
 
-          <EquationBox
-            label="Câmpul Magnetic"
-            equation="B⃗ = (μ₀I / 2πr) · e⃗θ"
-            note="Unde μ₀ este permeabilitatea vidului, I curentul, r distanța."
-          />
+          <div className="bg-fluid border border-border rounded-sm p-8 md:p-10 relative">
+            <div className="absolute -top-3 left-8 bg-void px-3 font-mono text-xs font-medium text-pole-south tracking-widest uppercase flex items-center gap-2">
+              <span className="block size-1.5 rounded-full bg-pole-south" />
+              Câmpul Magnetic
+            </div>
+            <div className="flex flex-col md:flex-row gap-8 items-center">
+              <div className="flex-1 flex justify-center py-6 border-y border-border w-full">
+                <img src={equationBField} alt="B = μ₀I / 2πr · eθ" className="h-16 object-contain" />
+              </div>
+              <div className="w-px h-24 bg-border hidden md:block" />
+              <div className="w-full md:w-48 shrink-0 text-sm text-particle-dim">
+                Unde μ₀ este permeabilitatea vidului, I curentul, r distanța.
+              </div>
+            </div>
+          </div>
 
           <div className="mt-8 space-y-6">
             <div>
