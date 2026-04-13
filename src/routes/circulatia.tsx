@@ -103,10 +103,15 @@ function CirculatiaPage() {
             Fluxul (Gauss-Ostrogradski)
           </h2>
 
-          <EquationBox
-            label="Formula Gauss-Ostrogradski"
-            equation="∯ F · dS = ∭ (div F) dV"
-          />
+          <div className="bg-fluid border border-border rounded-sm p-8 md:p-10 relative">
+            <div className="absolute -top-3 left-8 bg-void px-3 font-mono text-xs font-medium text-pole-south tracking-widest uppercase flex items-center gap-2">
+              <span className="block size-1.5 rounded-full bg-pole-south" />
+              Formula Gauss-Ostrogradski
+            </div>
+            <div className="flex justify-center py-6 border-y border-border">
+              <img src={gaussFormula} alt="∯ F · dS = ∭ (div F) dV" className="h-12 object-contain" />
+            </div>
+          </div>
 
           <p className="text-particle-dim leading-relaxed">
             Fluxul reprezintă o integrală de suprafață care ne spune
