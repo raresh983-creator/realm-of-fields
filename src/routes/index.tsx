@@ -88,11 +88,9 @@ function Index() {
             <br />
             <span className="text-particle-dim text-4xl md:text-[4rem]">și aplicațiile sale în ingineria electrică</span>
           </h1>
-          <p className="mt-12 max-w-[55ch] text-particle-dim text-lg md:text-xl font-light leading-relaxed">
-            O imersiune în structura matematică a universului. Observați cum
-            forțele elementare sculptează spațiul gol prin tensiune, flux și
-            circulație, aliniind materia ca pilitura de fier într-un curent
-            magnetic.
+          <p className="mt-12 max-w-[55ch] text-particle-dim text-lg md:text-xl font-light leading-relaxed whitespace-pre-line">
+            Studenți: Nica Rareș-Mihai, Năstase Ștefan-Robert, Cioc Ruben-Samuel{"\n"}
+            Facultatea de Inginerie Electrică, Politehnica, Grupa 115B
           </p>
         </div>
       </section>
