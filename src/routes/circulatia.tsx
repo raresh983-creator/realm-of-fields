@@ -5,7 +5,7 @@ import {
   PhysicsNote,
 } from "../components/SectionLayout";
 import rotorImg from "../assets/rotor-field.jpg";
-import stokesFormula from "../assets/stokes-formula.png";
+import gaussFormula from "../assets/gauss-formula.png";
 
 export const Route = createFileRoute("/circulatia")({
   head: () => ({
