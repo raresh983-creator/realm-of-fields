@@ -6,7 +6,7 @@ import {
 } from "../components/SectionLayout";
 import conductorImg from "../assets/conductor-field.jpg";
 import equationBField from "../assets/equation-b-field.png";
-import campulRadialImg from "../assets/campul-radial-title.png";
+import campulRadialFull from "../assets/campul-radial-full.png";
 import { ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/aplicatii")({
@@ -135,29 +135,7 @@ function AplicatiiPage() {
         <div className="grid md:grid-cols-2 gap-16 max-w-5xl mx-auto">
           {/* Exemplu 1: Câmpul radial */}
           <div className="flex flex-col gap-6">
-            <div className="bg-fluid border border-border rounded-sm p-6">
-              <img src={campulRadialImg} alt="Câmpul radial: v⃗ = r⃗/r" className="h-14 object-contain" />
-              <div className="mt-4 pt-4 border-t border-border text-sm text-particle-dim">
-                <span className="text-particle">unde:</span>
-                <div className="font-mono text-center text-particle py-3">
-                  r⃗ = xî + yĵ + zk̂, &nbsp;&nbsp; r = √(x² + y² + z²)
-                </div>
-              </div>
-            </div>
-
-            <EquationBox
-              label="Divergența"
-              equation="∇ · (r⃗/r) = 2/r"
-            />
-
-            <div className="bg-fluid border border-border rounded-sm p-6">
-              <div className="font-mono text-xs text-pole-south tracking-widest uppercase mb-3">
-                Rotorul
-              </div>
-              <div className="font-mono text-particle text-center text-lg py-2">
-                ∇ × (r⃗/r) = 0
-              </div>
-            </div>
+            <img src={campulRadialFull} alt="Câmpul radial — divergența și rotorul" className="w-full rounded-sm border border-border" />
 
             <PhysicsNote>
               Câmpul radial are divergență nenulă (izvor), dar rotor nul —
