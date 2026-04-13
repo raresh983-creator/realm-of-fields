@@ -13,6 +13,7 @@ import { Route as VizualizareRouteImport } from './routes/vizualizare'
 import { Route as GradientRouteImport } from './routes/gradient'
 import { Route as DivergentaRouteImport } from './routes/divergenta'
 import { Route as CirculatiaRouteImport } from './routes/circulatia'
+import { Route as AplicatiiRouteImport } from './routes/aplicatii'
 import { Route as IndexRouteImport } from './routes/index'
 
 const VizualizareRoute = VizualizareRouteImport.update({
@@ -35,6 +36,11 @@ const CirculatiaRoute = CirculatiaRouteImport.update({
   path: '/circulatia',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AplicatiiRoute = AplicatiiRouteImport.update({
+  id: '/aplicatii',
+  path: '/aplicatii',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -43,6 +49,7 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/aplicatii': typeof AplicatiiRoute
   '/circulatia': typeof CirculatiaRoute
   '/divergenta': typeof DivergentaRoute
   '/gradient': typeof GradientRoute
@@ -50,6 +57,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/aplicatii': typeof AplicatiiRoute
   '/circulatia': typeof CirculatiaRoute
   '/divergenta': typeof DivergentaRoute
   '/gradient': typeof GradientRoute
@@ -58,6 +66,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/aplicatii': typeof AplicatiiRoute
   '/circulatia': typeof CirculatiaRoute
   '/divergenta': typeof DivergentaRoute
   '/gradient': typeof GradientRoute
@@ -65,12 +74,25 @@ export interface FileRoutesById {
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/circulatia' | '/divergenta' | '/gradient' | '/vizualizare'
+  fullPaths:
+    | '/'
+    | '/aplicatii'
+    | '/circulatia'
+    | '/divergenta'
+    | '/gradient'
+    | '/vizualizare'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/circulatia' | '/divergenta' | '/gradient' | '/vizualizare'
+  to:
+    | '/'
+    | '/aplicatii'
+    | '/circulatia'
+    | '/divergenta'
+    | '/gradient'
+    | '/vizualizare'
   id:
     | '__root__'
     | '/'
+    | '/aplicatii'
     | '/circulatia'
     | '/divergenta'
     | '/gradient'
@@ -79,6 +101,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AplicatiiRoute: typeof AplicatiiRoute
   CirculatiaRoute: typeof CirculatiaRoute
   DivergentaRoute: typeof DivergentaRoute
   GradientRoute: typeof GradientRoute
@@ -115,6 +138,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CirculatiaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/aplicatii': {
+      id: '/aplicatii'
+      path: '/aplicatii'
+      fullPath: '/aplicatii'
+      preLoaderRoute: typeof AplicatiiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -127,6 +157,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AplicatiiRoute: AplicatiiRoute,
   CirculatiaRoute: CirculatiaRoute,
   DivergentaRoute: DivergentaRoute,
   GradientRoute: GradientRoute,
