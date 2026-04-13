@@ -48,7 +48,7 @@ function GradientPage() {
 
         <EquationBox
           label="Gradientul"
-          equation="∇U = î(∂U/∂x) + ĵ(∂U/∂y) + k̂(∂U/∂z)"
+          equation="​"
           note="Unde ∇ (nabla) este operatorul diferențial vectorial Hamilton."
         />
       </section>
