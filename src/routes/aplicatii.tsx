@@ -134,17 +134,28 @@ function AplicatiiPage() {
         <div className="grid md:grid-cols-2 gap-16 max-w-5xl mx-auto">
           {/* Exemplu 1: Câmpul radial */}
           <div className="flex flex-col gap-6">
-            <h3 className="font-display text-2xl italic">
-              Câmpul radial: v⃗ = r⃗/r
-            </h3>
+            <div className="bg-fluid border border-border rounded-sm p-6">
+              <img src={campulRadialImg} alt="Câmpul radial: v⃗ = r⃗/r" className="h-14 object-contain" />
+              <div className="mt-4 pt-4 border-t border-border text-sm text-particle-dim">
+                <span className="text-particle">unde:</span>
+                <div className="font-mono text-center text-particle py-3">
+                  r⃗ = xî + yĵ + zk̂, &nbsp;&nbsp; r = √(x² + y² + z²)
+                </div>
+              </div>
+            </div>
 
             <EquationBox
               label="Divergența"
               equation="∇ · (r⃗/r) = 2/r"
             />
 
-            <div className="font-mono text-sm bg-pole-north/5 px-5 py-3 rounded-sm border border-pole-north/20">
-              ∇ × (r⃗/r) = 0
+            <div className="bg-fluid border border-border rounded-sm p-6">
+              <div className="font-mono text-xs text-pole-south tracking-widest uppercase mb-3">
+                Rotorul
+              </div>
+              <div className="font-mono text-particle text-center text-lg py-2">
+                ∇ × (r⃗/r) = 0
+              </div>
             </div>
 
             <PhysicsNote>
