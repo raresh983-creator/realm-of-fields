@@ -70,10 +70,15 @@ function CirculatiaPage() {
             Circulația (Stokes)
           </h2>
 
-          <EquationBox
-            label="Formula lui Stokes"
-            equation="∮ F · dl = ∬ (rot F) · dS"
-          />
+          <div className="bg-fluid border border-border rounded-sm p-8 md:p-10 relative">
+            <div className="absolute -top-3 left-8 bg-void px-3 font-mono text-xs font-medium text-pole-south tracking-widest uppercase flex items-center gap-2">
+              <span className="block size-1.5 rounded-full bg-pole-south" />
+              Formula lui Stokes
+            </div>
+            <div className="flex justify-center py-6 border-y border-border">
+              <img src={stokesFormula} alt="∮ F · dl = ∬ (rot F) · dS" className="h-12 object-contain" />
+            </div>
+          </div>
 
           <p className="text-particle-dim leading-relaxed">
             Circulația reprezintă integrala de linie a vectorului de-a lungul
