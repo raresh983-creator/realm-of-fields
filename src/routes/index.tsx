@@ -4,25 +4,6 @@ import heroImg from "../assets/hero-field.jpg";
 import { ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Teoria Câmpurilor Electromagnetice — ETC" },
-      {
-        name: "description",
-        content:
-          "Explorați universul câmpurilor electromagnetice: gradient, divergență, rotor, flux și circulație.",
-      },
-      {
-        property: "og:title",
-        content: "Teoria Câmpurilor Electromagnetice — ETC",
-      },
-      {
-        property: "og:description",
-        content:
-          "De la matematică la electromagnetism — un deep dive în elementele de teoria câmpurilor.",
-      },
-    ],
-  }),
   component: Index,
 });
 
