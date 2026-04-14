@@ -9,11 +9,6 @@ import gradientImg from "../assets/gradient-field.jpg";
 export const Route = createFileRoute("/gradient")({
   component: GradientPage,
 });
-      },
-    ],
-  }),
-  component: GradientPage,
-});
 
 function GradientPage() {
   return (
