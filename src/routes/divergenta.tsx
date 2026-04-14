@@ -7,22 +7,6 @@ import {
 import divImg from "../assets/divergence-field.jpg";
 
 export const Route = createFileRoute("/divergenta")({
-  head: () => ({
-    meta: [
-      { title: "Divergența & Câmpul Magnetic — ETC" },
-      {
-        name: "description",
-        content:
-          "Izvoare, puțuri și câmpul solenoidal. Divergența și proprietățile câmpului magnetic.",
-      },
-      { property: "og:title", content: "Divergența & Câmpul Magnetic — ETC" },
-      {
-        property: "og:description",
-        content:
-          "Ce înseamnă divergența în lumea reală: surse, absorbții și incompresibilitatea fluxului magnetic.",
-      },
-    ],
-  }),
   component: DivergentaPage,
 });
 

@@ -6,22 +6,6 @@ import {
 import gradientImg from "../assets/gradient-field.jpg";
 
 export const Route = createFileRoute("/vizualizare")({
-  head: () => ({
-    meta: [
-      { title: "Vizualizarea Câmpurilor — ETC" },
-      {
-        name: "description",
-        content:
-          "Cum vedem un câmp invizibil: suprafețe echipotențiale, linii de câmp și tuburi de vectori.",
-      },
-      { property: "og:title", content: "Vizualizarea Câmpurilor — ETC" },
-      {
-        property: "og:description",
-        content:
-          "Instrumente matematice pentru vizualizarea câmpurilor electrice și magnetice.",
-      },
-    ],
-  }),
   component: VizualizarePage,
 });
 
