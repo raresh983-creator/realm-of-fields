@@ -7,25 +7,6 @@ import {
 import gradientImg from "../assets/gradient-field.jpg";
 
 export const Route = createFileRoute("/gradient")({
-  head: () => ({
-    meta: [
-      { title: "Gradientul & Câmpul Irotațional — ETC" },
-      {
-        name: "description",
-        content:
-          "Direcția variației maxime, perpendicularitatea gradientului și câmpurile armonice Laplaciene.",
-      },
-      {
-        property: "og:title",
-        content: "Gradientul & Câmpul Irotațional — ETC",
-      },
-      {
-        property: "og:description",
-        content:
-          "Secretele gradientului: direcția de creștere maximă și ecuația lui Laplace.",
-      },
-    ],
-  }),
   component: GradientPage,
 });
 

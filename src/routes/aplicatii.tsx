@@ -11,25 +11,6 @@ import campulCircularFull from "../assets/campul-circular-full.png";
 import { ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/aplicatii")({
-  head: () => ({
-    meta: [
-      { title: "Aplicații — Câmpul Magnetic în Jurul unui Conductor — ETC" },
-      {
-        name: "description",
-        content:
-          "Câmpul magnetic al unui conductor rectiliniu infinit: model matematic, divergență, rotor și linii de câmp circulare.",
-      },
-      {
-        property: "og:title",
-        content: "Aplicații Inginerești — ETC",
-      },
-      {
-        property: "og:description",
-        content:
-          "Cum ETC descrie fenomene reale: câmpul magnetic, motoare electrice, generatoare.",
-      },
-    ],
-  }),
   component: AplicatiiPage,
 });
 

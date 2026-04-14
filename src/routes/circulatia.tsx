@@ -10,22 +10,6 @@ import gaussFormula from "../assets/gauss-formula.png";
 import gradientFormula from "../assets/gradient-formula.png";
 
 export const Route = createFileRoute("/circulatia")({
-  head: () => ({
-    meta: [
-      { title: "Circulația & Fluxul — ETC" },
-      {
-        name: "description",
-        content:
-          "Teorema lui Stokes, teorema Gauss-Ostrogradski și interpretarea lor fizică.",
-      },
-      { property: "og:title", content: "Circulația & Fluxul — ETC" },
-      {
-        property: "og:description",
-        content:
-          "Ecuațiile lui Maxwell se bazează pe circulație și flux — descoperă cum le măsurăm.",
-      },
-    ],
-  }),
   component: CirculatiaPage,
 });
 
