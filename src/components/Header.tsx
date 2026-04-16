@@ -9,6 +9,7 @@ const navItems = [
   { to: "/divergenta", label: "Divergența" },
   { to: "/circulatia", label: "Circulația" },
   { to: "/aplicatii", label: "Aplicații" },
+  { to: "/bibliografie", label: "Bibliografie" },
 ] as const;
 
 export function Header() {
